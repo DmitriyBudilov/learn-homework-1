@@ -36,6 +36,9 @@ def list_of_planets_maker():
     return planets[:-2]
 
 def greet_user(bot, update):
+    '''
+        Сообщение о вызове /start.
+    '''
     text = 'Called /start'
     logging.info(text)
     update.message.reply_text(text)
